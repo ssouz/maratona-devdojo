@@ -1,9 +1,13 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio;
 
+import java.util.Arrays;
+
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salarios;
+    private String nome;
+    private int idade;
+    private double[] salarios;
+
+
 
     public void imprime() {
         System.out.println(this.nome);
@@ -15,20 +19,55 @@ public class Funcionario {
             System.out.print(salario + " ");
         }
 
-        imprimeMediaSalario();
+        System.out.println("\nMedia: "+getMediaSalario());
     }
 
-    public void imprimeMediaSalario() {
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public double[] getSalarios() {
+        return salarios;
+    }
+
+    public void setSalarios(double[] salarios) {
+        this.salarios = salarios;
+    }
+
+
+    public double getMediaSalario() {
         if (salarios == null) {
-            return;
+            return 0;
         }
-        double media = 0;
+         double media = 0;
 
         for (double salario : salarios) {
             media += salario;
         }
         media /= salarios.length;
 
-        System.out.println("\nMédia salarial " + media);
+       return media;
+    }
+
+    @Override
+    public String toString() {
+        return "Funcionario{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", salarios=" + Arrays.toString(salarios)+
+                ", Media: "+getMediaSalario() +
+                '}';
     }
 }
