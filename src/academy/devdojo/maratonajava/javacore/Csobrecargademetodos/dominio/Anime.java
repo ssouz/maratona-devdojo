@@ -5,23 +5,72 @@ public class Anime {
     private String tipo;
     private int episodios;
     private String genero;
+    private String estudio;
 
-    public Anime(String nome, String tipo, int episodios) {
+
+    public Anime(String nome) {
+
         this.nome = nome;
+
+    }
+    public Anime(String nome, String tipo, int episodios) {
+        this(nome);
         this.tipo = tipo;
         this.episodios = episodioIsValid(episodios);
     }
 
     public Anime(String nome, String genero, String tipo, int episodios) {
-        this.nome = nome;
+        this(nome,tipo, episodios);
         this.genero = genero;
-        this.tipo = tipo;
-        this.episodios = episodios;
+
+
+    }
+    public Anime(String nome, String genero, String tipo,String estudio, int episodios) {
+        this(nome, genero, tipo,episodios);
+        this.estudio = estudio;
+
 
     }
 
-    public Anime(String nome) {
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getEpisodios() {
+        return episodios;
+    }
+
+    public void setEpisodios(int episodios) {
+        this.episodios = episodios;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getEstudio() {
+        return estudio;
+    }
+
+    public void setEstudio(String estudio) {
+        this.estudio = estudio;
     }
 
     private int episodioIsValid(int episodios) {
