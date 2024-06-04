@@ -7,14 +7,13 @@ public class Carro {
     private double velocidadeMaxima;
     private static double velocidadelimite = 280;
 
-    public static void setVelocidadelimite(double velocidadelimite) {
-        Carro.velocidadelimite = velocidadelimite;
-    }
-
     public Carro(String fabricante, String modelo, double velocidadeMaxima) {
         this.fabricante = fabricante;
         this.modelo = modelo;
         this.velocidadeMaxima = velocidadeMaxima;
+    }
+    public static void setVelocidadelimite(double velocidadelimite) {
+        Carro.velocidadelimite = velocidadelimite;
     }
 
 

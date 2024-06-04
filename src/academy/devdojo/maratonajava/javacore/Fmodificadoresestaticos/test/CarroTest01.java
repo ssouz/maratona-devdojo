@@ -13,8 +13,10 @@ public class CarroTest01 {
 
 	Carro c1 = new Carro("test","tt",222);
 
-    Carro.setVelocidadelimite(285);
+
 	System.out.println(carros);
+    Carro.setVelocidadelimite(50);
+    System.out.println(c1);
         
 
 
