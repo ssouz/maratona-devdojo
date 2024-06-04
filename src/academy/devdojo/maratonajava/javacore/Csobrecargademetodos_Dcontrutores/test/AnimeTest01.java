@@ -1,6 +1,6 @@
-package academy.devdojo.maratonajava.javacore.Csobrecargademetodos.test;
+package academy.devdojo.maratonajava.javacore.Csobrecargademetodos_Dcontrutores.test;
 
-import academy.devdojo.maratonajava.javacore.Csobrecargademetodos.dominio.Anime;
+import academy.devdojo.maratonajava.javacore.Csobrecargademetodos_Dcontrutores.dominio.Anime;
 
 import java.util.*;
 
