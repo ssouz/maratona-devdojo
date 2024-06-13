@@ -9,5 +9,7 @@ public class JogadorTest02 {
         Time time = new Time("selecao");
         jogador1.setTime(time);
         jogador1.imprime();
+
+        time.imprime();
     }
 }
