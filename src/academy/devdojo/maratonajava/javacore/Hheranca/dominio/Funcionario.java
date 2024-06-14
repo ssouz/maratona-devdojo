@@ -4,6 +4,16 @@ import java.sql.SQLOutput;
 
 public class Funcionario extends Pessoa {
     private double salario;
+
+    static {
+        System.out.println("Dentro do bloco de inicializacao estatico de funcionario");
+    }
+    {
+        System.out.println("Dentro do bloco de inicializacao de funcionario");
+    }
+    public Funcionario(String nome){
+        super(nome);
+    }
     public Funcionario(String nome, String cpf) {
         super(nome, cpf);
     }
