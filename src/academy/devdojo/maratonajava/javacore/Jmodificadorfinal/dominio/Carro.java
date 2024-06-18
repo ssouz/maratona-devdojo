@@ -10,7 +10,7 @@ public class Carro {
         velocidadeLimite = 250;
 
     }
-    public final void imprime(){
+    public  final void imprime(){
         System.out.println(this.nome);
     }
     public Comprador getComprador() {
