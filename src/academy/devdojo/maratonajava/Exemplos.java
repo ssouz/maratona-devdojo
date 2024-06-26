@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Exemplos {
     private static final Random random = new Random();
-    private static List<String> nomesClientesPessoaFisica = List.of(
+    private static final List<String> nomesClientesPessoaFisica = List.of(
             "Ana Silva", "João Santos", "Maria Oliveira", "Pedro Souza", "Juliana Costa",
             "Fernanda Lima", "Rafael Almeida", "Carolina Santos", "Marcos Oliveira", "Luiza Costa",
             "Daniel Pereira", "Mariana Alves", "Rodrigo Souza", "Camila Santos", "Felipe Oliveira",
@@ -17,7 +17,7 @@ public class Exemplos {
             "Priscila Rodrigues", "Paulo Pereira", "Bianca Almeida", "Fábio Santos", "Helena Oliveira",
             "Renato Costa", "Natasha Martins");
 
-    private static List<String> nomesClinteEmpresas = List.of(
+    private static final List<String> nomesClinteEmpresas = List.of(
             "Tech Solutions Inc.", "Global Electronics Ltd.", "Innovative Consulting Group",
             "Express Logistics Services", "Alpha Industries", "Beta Distributors",
             "Gamma Apparel Stores", "Delta Advertising Agency", "Constructive Builders Ltd.",
@@ -35,7 +35,7 @@ public class Exemplos {
             "PetCare Veterinary Clinic", "Innovative Projects Engineering Office",
             "Max Speed Motorcycles Dealership", "Total Sustainability Environmental Consultancy",
             "Skin Art Tattoo Studio");
-    private static List<String> nomesAnimes = List.of(
+    private static final List<String> nomesAnimes = List.of(
             "Naruto", "Dragon Ball", "One Piece", "Attack on Titan", "My Hero Academia",
             "Death Note", "Tokyo Ghoul", "Fullmetal Alchemist", "Sword Art Online", "Bleach",
             "Demon Slayer", "One Punch Man", "Fairy Tail", "Hunter x Hunter", "Steins;Gate",
